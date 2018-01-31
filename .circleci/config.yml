@@ -13,6 +13,11 @@ jobs:
             go get github.com/labstack/echo
             go get github.com/dgrijalva/jwt-go
       - run:
+          name: check directory and files
+          command: |
+            pwd
+            ls -a
+      - run:
           name: run echo server
           command: go run main.go
       - run:
