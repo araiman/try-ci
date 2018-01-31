@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
         name: install dependencies
-        command:
+        command: |
           go get github.com/labstack/echo
           go get github.com/dgrijalva/jwt-go
       - run:
